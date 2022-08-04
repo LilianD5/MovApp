@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view :key="$route.fullPath" />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#menu-burger-btn{
+  padding: 8px 16px;
 }
+#movies-container{
+  margin: 0 auto;
+}
+.movie-container{
+  cursor: pointer;
+}
+.movie-container:hover{
+  background-color: #f3f3f3;
+}
+#menu-burger{
+  align-self: flex-start;
+}
+#img-movie{
+  margin: 0 auto;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.switch{
+  width: 100px;
+  height: 40px;
+}
+.switch-circle{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.switch-titles{
+  line-height: 40px;
+}
+@import'~bootstrap/dist/css/bootstrap.css';
 </style>
